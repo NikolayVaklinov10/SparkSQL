@@ -11,7 +11,8 @@ spark = SparkSession \
     .getOrCreate()
 
 
-
+df = spark.read.json("people.json")
+df.show()
 
 
 
